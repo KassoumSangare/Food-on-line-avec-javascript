@@ -642,3 +642,465 @@ nav {
   color: #555;
   line-height: 1.5;
 }
+
+/* =========================
+   ORDER SECTION
+========================= */
+
+.order-now_section {
+  width: 100%;
+  padding: 40px 10%;
+  background: url("./image/bg2.jpg") center/cover no-repeat;
+}
+
+/* TITLE */
+
+.order-now__title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 40px;
+  font-style: italic;
+}
+
+.order-now__title--style {
+  color: var(--color-primary);
+  position: relative;
+  display: inline-block;
+}
+
+.order-now__title--style::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 4px;
+  background-color: var(--color-primary);
+  border-radius: 2px;
+}
+
+/* =========================
+   LAYOUT
+========================= */
+
+.order-now__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+/* IMAGE */
+
+.order-now__left {
+  flex: 1 1 350px;
+}
+
+.order-now__left img {
+  width: 100%;
+  max-width: 450px;
+  display: block;
+}
+
+/* FORM CONTAINER */
+
+.order-now__right {
+  flex: 1 1 400px;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* =========================
+   FORM GRID
+========================= */
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px 20px;
+}
+
+/* GROUP */
+
+.inputs-group-right,
+.inputs-group-left {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* LABEL */
+
+label {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* INPUT */
+
+input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: 0.2s;
+}
+
+input:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 4px rgba(255, 164, 28, 0.5);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+  form {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================
+   TEAMS SECTION
+========================= */
+
+.teams {
+  width: 100%;
+  padding: 60px 20px;
+  background: url("/image/bg1.jpg") center/cover no-repeat;
+}
+
+/* TITLE */
+
+.teams-title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 40px;
+  font-style: italic;
+}
+
+.teams-title--style {
+  color: var(--color-primary);
+  position: relative;
+}
+
+.teams-title--style::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+  background: var(--color-primary);
+}
+
+/* =========================
+   LAYOUT
+========================= */
+
+.teams__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.teams__bow {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* IMAGE */
+
+.teams__bow img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+/* =========================
+   OVERLAY CONTENT
+========================= */
+
+.teams__context {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  padding: 15px;
+
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Hover effects */
+
+.teams__bow:hover img {
+  transform: scale(1.1);
+}
+
+.teams__bow:hover .teams__context {
+  opacity: 1;
+}
+
+/* TEXT */
+
+.team__name {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.team__description {
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.team__social i {
+  margin: 0 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.team__social i:hover {
+  color: var(--color-primary);
+  transform: scale(1.2);
+} /* =========================
+   TEAMS SECTION
+========================= */
+
+.teams {
+  width: 100%;
+  padding: 60px 20px;
+  background: url("/image/bg1.jpg") center/cover no-repeat;
+}
+
+/* TITLE */
+
+.teams-title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 40px;
+  font-style: italic;
+}
+
+.teams-title--style {
+  color: var(--color-primary);
+  position: relative;
+}
+
+.teams-title--style::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+  background: var(--color-primary);
+}
+
+/* =========================
+   LAYOUT
+========================= */
+
+.teams__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.teams__bow {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* IMAGE */
+
+.teams__bow img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+/* =========================
+   OVERLAY CONTENT
+========================= */
+
+.teams__context {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  padding: 15px;
+
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Hover effects */
+
+.teams__bow:hover img {
+  transform: scale(1.1);
+}
+
+.teams__bow:hover .teams__context {
+  opacity: 1;
+}
+
+/* TEXT */
+
+.team__name {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.team__description {
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.team__social i {
+  margin: 0 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.team__social i:hover {
+  color: var(--color-primary);
+  transform: scale(1.2);
+}
+.teams__bow {
+  animation: fadeUp 0.6s ease forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Footer */
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+  background:#ccc;
+  color:var(--text-color);
+  padding-top: 50px;
+}
+
+.footer__container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.footer__col {
+  flex: 1 1 220px;
+}
+
+.footer__logo {
+  font-size: 24px;
+  color: var(--color-primary);
+  margin-bottom: 10px;
+}
+
+.footer h3 {
+  margin-bottom: 12px;
+  color: var(--text-color);
+}
+
+/* Links */
+
+.footer ul {
+  list-style: none;
+}
+
+.footer ul li {
+  margin-bottom: 8px;
+}
+
+.footer a {
+  color: var(--text-color);
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.footer a:hover {
+  color: var(--color-primary);
+  padding-left: 4px;
+}
+
+/* Social */
+
+.footer__social i {
+  font-size: 22px;
+  margin-right: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.footer__social i:hover {
+  color: var(--color-primary);
+  transform: scale(1.2);
+}
+
+/* Bottom */
+
+.footer__bottom {
+  text-align: center;
+  margin-top: 40px;
+  padding: 15px;
+  background:#e5ac57;
+  font-size: 14px;
+}
